@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="small_pad">4dp</dimen>
+    <dimen name="medium_pad">8dp</dimen>
+    <dimen name="big_pad">16dp</dimen>
+    <dimen name="large_pad">32dp</dimen>
+    <dimen name="larger_pad">64dp</dimen>
+    <dimen name="bottom_sheet_peek_height">900dp</dimen>
+</resources>
