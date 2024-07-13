@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/flight_tickets"
+        android:id="@+id/tickets_search_nav_graph"
         android:title="Авиабилеты"
         android:icon="@drawable/ic_thin_flight"/>
     <item
-        android:id="@+id/hotels"
+        android:id="@+id/hotelsPlaceholderFragment"
         android:title="Отели"
         android:icon="@drawable/ic_bed"/>
     <item
-        android:id="@+id/in_short"
+        android:id="@+id/inShortPlaceholderFragment"
         android:title="Короче"
         android:icon="@drawable/ic_location"/>
     <item
-        android:id="@+id/subscriptions"
+        android:id="@+id/subscriptionsPlaceholderFragment"
         android:title="Подписки"
         android:icon="@drawable/ic_bell"/>
     <item
-        android:id="@+id/profile"
+        android:id="@+id/profilePlaceholderFragment"
         android:title="Профиль"
         android:icon="@drawable/ic_person"/>
 </menu>

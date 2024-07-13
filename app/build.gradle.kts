@@ -1,5 +1,3 @@
-
-
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
@@ -49,6 +47,7 @@ android {
 }
 
 dependencies {
+    implementation(projects.feature.ticketsSearch.ticketsSearchPresentation)
     implementation(libs.androidx.core.ktx)
     implementation (libs.androidx.activity.ktx)
     implementation (libs.androidx.fragment.ktx)
@@ -56,8 +55,6 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
-    implementation(project(":domain"))
-    implementation(project(":data"))
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -82,4 +79,8 @@ dependencies {
 
     //DataStore
     implementation(libs.androidx.datastore.preferences)
+
+    //Navigation
+    implementation(libs.androidx.navigation.fragment.ktx)
+    implementation(libs.androidx.navigation.ui.ktx)
 }
