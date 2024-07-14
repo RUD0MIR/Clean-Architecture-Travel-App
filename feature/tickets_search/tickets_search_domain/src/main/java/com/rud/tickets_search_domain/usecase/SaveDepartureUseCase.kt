@@ -6,5 +6,7 @@ import javax.inject.Inject
 class SaveDepartureUseCase @Inject constructor(
     private val dataStoreRepository: DataStoreRepository
 ) {
-    suspend operator fun invoke(departure: String) = dataStoreRepository.saveDeparture(departure)
+    suspend operator fun invoke(departure: String) {
+        dataStoreRepository.saveDeparture(departure)
+    }
 }

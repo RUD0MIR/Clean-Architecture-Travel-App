@@ -46,8 +46,8 @@ class SearchFragment() : BottomSheetDialogFragment() {
         binding.apply {
             ivAnywhere.setOnClickListener {
                 navigateToDetailedSearchFragment(
+                    binding.etDeparture.text.toString(),
                     "Куда угодно",
-                    binding.etDeparture.text.toString()
                 )
             }
             ivWeekends.setOnClickListener {

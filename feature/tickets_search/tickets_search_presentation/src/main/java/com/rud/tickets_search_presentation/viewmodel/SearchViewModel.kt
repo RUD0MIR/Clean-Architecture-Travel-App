@@ -12,8 +12,6 @@ import com.rud.tickets_search_domain.usecase.SaveDepartureUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
-import kotlinx.coroutines.flow.emitAll
-import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.stateIn
@@ -40,9 +38,7 @@ class SearchViewModel @Inject constructor(
     val isLoading: LiveData<Boolean>
         get() = _isLoading
 
-    val savedDeparture: StateFlow<String> = flow {
-       emitAll(loadDepartureUseCase())
-    }.stateIn(
+    val departure: StateFlow<String> = loadDepartureUseCase().stateIn(
         initialValue = "",
         scope = viewModelScope,
         started = SharingStarted.WhileSubscribed(5000)
