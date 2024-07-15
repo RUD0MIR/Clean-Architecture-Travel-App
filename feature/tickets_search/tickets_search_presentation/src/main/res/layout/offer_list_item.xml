@@ -5,6 +5,8 @@
     android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:theme="@style/Theme.AirlineTickets"
+    android:background="?attr/colorSurface"
     android:orientation="vertical"
     android:paddingEnd="@dimen/larger_pad">
 
@@ -28,7 +30,7 @@
         android:layout_marginTop="@dimen/small_pad"
         tools:text="Die Antwoord"
         android:textSize="8pt"
-        android:textColor="@color/white"
+        android:textColor="?attr/colorOnPrimary"
         android:fontFamily="@font/spf_black"
         />
 
@@ -39,7 +41,7 @@
         android:layout_marginTop="@dimen/small_pad"
         tools:text="Будапешт"
         android:textSize="7pt"
-        android:textColor="@color/gray7"
+        android:textColor="?attr/colorOnSurface"
         android:fontFamily="@font/spf_medium"
         />
 
@@ -51,7 +53,7 @@
             tools:text="от 22 264 р"
             android:drawableStart="@drawable/ic_flight"
             android:textSize="7pt"
-            android:textColor="@color/gray7"
+            android:textColor="?attr/colorOnSurface"
             android:fontFamily="@font/spf_medium"
             />
 

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style name="Base.Theme.AirlineTickets" parent="Theme.MaterialComponents.NoActionBar">
+    <item name="colorPrimary">@color/dark_blue</item>
+    <item name="colorSecondary">@color/dark_blue</item>
+    <item name="colorOnPrimary">@color/white</item>
+    <item name="colorSurface">@color/black</item>
+    <item name="colorSurfaceContainerLowest">@color/gray1</item>
+    <item name="colorSurfaceContainerLow">@color/gray2</item>
+    <item name="colorSurfaceContainer">@color/gray3</item>
+    <item name="colorOnSurface">@color/gray7</item>
+    <item name="colorOnSurfaceVariant">@color/gray6</item>
+</style>
+<style name="Theme.AirlineTickets" parent="Base.Theme.AirlineTickets" />
+    </resources>

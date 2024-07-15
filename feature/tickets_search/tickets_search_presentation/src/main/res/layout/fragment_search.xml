@@ -2,6 +2,8 @@
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:theme="@style/Theme.AirlineTickets"
+    android:background="?attr/colorSurfaceContainerLowest"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -25,7 +27,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/gray5"
+            android:backgroundTint="?attr/colorSurfaceContainer"
             android:elevation="@dimen/medium_pad"
             app:cardCornerRadius="@dimen/big_pad">
 
@@ -52,7 +54,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="@dimen/medium_pad"
-                    app:dividerColor="@color/gray6"
+                    app:dividerColor="@color/gray5"
                     app:layout_constraintBottom_toTopOf="@+id/et_arrival_date"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/imageView"
@@ -84,7 +86,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/large_pad">
-
             <ImageView
                 android:id="@+id/iv_hard_trail"
                 android:layout_width="wrap_content"
@@ -126,7 +127,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/large_pad"
-            android:backgroundTint="@color/gray5"
+            android:backgroundTint="?attr/colorSurfaceContainer"
 
             app:cardCornerRadius="@dimen/big_pad">
 

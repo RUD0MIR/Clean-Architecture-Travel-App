@@ -2,6 +2,8 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:theme="@style/Theme.AirlineTickets"
+    android:background="?attr/colorSurface"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <LinearLayout
@@ -19,14 +21,14 @@
             android:textSize="11pt"
             android:gravity="center"
             android:fontFamily="@font/spf_medium"
-            android:textColor="@color/gray7"
+            android:textColor="?attr/colorOnSurface"
             android:text="Поиск дешевых авиабилетов"/>
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardCornerRadius="16dp"
-            android:backgroundTint="@color/gray4"
+            app:cardCornerRadius="@dimen/big_pad"
+            android:backgroundTint="?attr/colorSurfaceContainerLow"
             android:layout_marginVertical="@dimen/large_pad"
             >
             <androidx.cardview.widget.CardView
@@ -34,7 +36,7 @@
                 android:layout_height="wrap_content"
                 android:elevation="@dimen/medium_pad"
                 app:cardCornerRadius="@dimen/big_pad"
-                android:backgroundTint="@color/gray5"
+                android:backgroundTint="?attr/colorSurfaceContainer"
                 android:layout_margin="@dimen/big_pad">
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -62,8 +64,8 @@
                         tools:text = "Минск"
                         android:textSize="8pt"
                         android:fontFamily="@font/spf_medium"
-                        android:textColor="@color/gray7"
-                        android:textColorHint="@color/gray6"
+                        android:textColor="?attr/colorOnSurface"
+                        android:textColorHint="?attr/colorOnSurfaceVariant"
                         android:background="@null"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/imageView"
@@ -74,7 +76,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="8dp"
                         android:layout_marginHorizontal="16dp"
-                        app:dividerColor="@color/gray6"
+                        app:dividerColor="@color/gray5"
                         app:layout_constraintBottom_toTopOf="@+id/tv_arrival"
                         app:layout_constraintStart_toEndOf="@+id/imageView"
                         app:layout_constraintTop_toBottomOf="@+id/et_departure_date"
@@ -89,8 +91,8 @@
                         android:textSize="8pt"
                         android:clickable="true"
                         android:fontFamily="@font/spf_medium"
-                        android:textColorHint="@color/gray6"
-                        android:textColor="@color/gray7"
+                        android:textColorHint="?attr/colorOnSurfaceVariant"
+                        android:textColor="?attr/colorOnSurface"
                         android:background="@null"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -106,7 +108,7 @@
             android:layout_height="wrap_content"
             android:textSize="11pt"
             android:fontFamily="@font/spf_medium"
-            android:textColor="@color/white"
+            android:textColor="?attr/colorOnPrimary"
             android:gravity="start"
             android:text="Музыкально отлететь"/>
 

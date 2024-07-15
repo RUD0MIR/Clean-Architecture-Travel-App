@@ -41,6 +41,7 @@ android {
 }
 
 dependencies {
+    implementation(projects.designSystem)
     implementation(projects.feature.ticketsSearch.ticketsSearchDomain)
     implementation(projects.feature.ticketsSearch.ticketsSearchData)
     implementation(projects.common)

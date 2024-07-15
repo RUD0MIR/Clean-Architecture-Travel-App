@@ -83,8 +83,8 @@ class SearchFragment() : BottomSheetDialogFragment() {
     private fun setUpRecyclerView() {
         val recommendedArrivalsAdapter = RecommendedArrivalsAdapter() { arrivalTitle ->
             navigateToDetailedSearchFragment(
-                arrivalTitle,
-                binding.etDeparture.text.toString()
+                binding.etDeparture.text.toString(),
+                arrivalTitle
             )
         }
         binding.rvArrivals.apply {

@@ -47,6 +47,7 @@ android {
 }
 
 dependencies {
+    implementation(projects.designSystem)
     implementation(projects.feature.ticketsSearch.ticketsSearchPresentation)
     implementation(libs.androidx.core.ktx)
     implementation (libs.androidx.activity.ktx)
