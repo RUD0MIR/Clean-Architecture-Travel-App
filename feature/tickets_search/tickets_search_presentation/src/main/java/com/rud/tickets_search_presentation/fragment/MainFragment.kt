@@ -1,11 +1,9 @@
 package com.rud.tickets_search_presentation.fragment
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.core.widget.doOnTextChanged
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
@@ -14,11 +12,10 @@ import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.rud.tickets_search_presentation.adapter.OffersAdapter
+import com.rud.tickets_search_presentation.adapter.TicketsOffersAdapter
 import com.rud.tickets_search_presentation.databinding.FragmentMainBinding
 import com.rud.tickets_search_presentation.viewmodel.SearchViewModel
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.launch
 
 private const val TAG = "MainFragment"
@@ -57,7 +54,7 @@ class MainFragment : Fragment() {
     }
 
     private fun setUpRecyclerView() {
-        val offersAdapter = OffersAdapter()
+        val offersAdapter = TicketsOffersAdapter()
         binding.rvOffers.apply {
             adapter = offersAdapter
             layoutManager = LinearLayoutManager(

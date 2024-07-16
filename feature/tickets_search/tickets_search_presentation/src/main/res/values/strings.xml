@@ -3,4 +3,6 @@
     <string name="cyrillic_input">
         абвгдеёжзийклмнопрстуфхцчшщъыьэюяАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ
     </string>
+
+    <string name="price_with_placeholder">от %1$s ₽</string>
 </resources>

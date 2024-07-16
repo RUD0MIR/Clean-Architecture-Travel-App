@@ -7,6 +7,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.rud.tickets_search_presentation.adapter.TicketsOffersAdapter
 import com.rud.tickets_search_presentation.databinding.FragmentDetailedSearchBinding
 import com.rud.tickets_search_presentation.onRightCompoundDrawableClick
 

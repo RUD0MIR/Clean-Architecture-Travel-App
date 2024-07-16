@@ -37,3 +37,24 @@ fun TextView.onRightCompoundDrawableClick(onClick: () -> Unit) {
         false
     })
 }
+
+fun Int.addSpaces(): String {
+    val initialNumber = this.toString()
+    if (initialNumber.length <= 3) {
+        return initialNumber
+    }
+
+    var formattedNumber = ""
+    var buffer = ""
+    initialNumber.reversed().forEach {
+        buffer += it
+        formattedNumber += it
+
+        if (buffer.length == 3) {
+            formattedNumber += " "
+            buffer = ""
+        }
+    }
+
+    return formattedNumber.reversed().trim()
+}
