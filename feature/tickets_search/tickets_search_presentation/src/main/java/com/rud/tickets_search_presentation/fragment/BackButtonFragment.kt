@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.rud.tickets_search_presentation.databinding.FragmentBackButtonBinding
 
 class BackButtonFragment : Fragment() {
@@ -18,7 +19,10 @@ class BackButtonFragment : Fragment() {
         binding = FragmentBackButtonBinding.inflate(inflater, container, false)
 
         binding.btnBack.setOnClickListener {
-            requireActivity().supportFragmentManager.popBackStack()
+            val action =
+                BackButtonFragmentDirections
+                    .actionBackButtonFragmentToSearchFragment("")
+            findNavController().navigate(action)
         }
 
         return binding.root

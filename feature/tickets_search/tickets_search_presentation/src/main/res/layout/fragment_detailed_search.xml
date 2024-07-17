@@ -167,6 +167,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/big_pad"
+        app:cardCornerRadius="@dimen/big_pad"
         android:backgroundTint="?attr/colorSurfaceContainerLow"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -175,22 +176,37 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingTop="@dimen/small_pad"
+            android:paddingHorizontal="@dimen/big_pad"
             android:orientation="vertical">
 
-            <androidx.recyclerview.widget.RecyclerView
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/big_pad" />
+                android:paddingTop="@dimen/medium_pad"
+                android:textAlignment="textStart"
+                android:text="Прямые рейсы"
+                android:textSize="10pt"
+                android:fontFamily="@font/spf_medium"
+                android:textColor="?attr/colorOnPrimary"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_tickets_recommendations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:itemCount="3"
+                tools:listitem="@layout/ticket_recommendation_item" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
-                android:layout_margin="@dimen/big_pad"
+                android:paddingVertical="@dimen/big_pad"
                 android:fontFamily="@font/spf_medium"
                 android:text="Показать все"
-                android:textAlignment="center"
-                android:textColor="?attr/colorPrimary"
+                android:gravity="center"
+                android:textColor="?attr/colorPrimaryVariant"
                 android:textSize="8pt" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
@@ -199,12 +215,13 @@
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/spf_light_italic"
+        android:fontFamily="@font/spf_regular"
         android:text="Посмотреть все билеты"
         app:cornerRadius="@dimen/big_pad"
         android:textAllCaps="false"
         android:textSize="8pt"
         android:textColor="?attr/colorOnPrimary"
+        android:backgroundTint="?attr/colorPrimaryVariant"
         android:layout_marginBottom="@dimen/big_pad"
         app:layout_constraintBottom_toTopOf="@+id/cardView3"
         app:layout_constraintEnd_toEndOf="parent"

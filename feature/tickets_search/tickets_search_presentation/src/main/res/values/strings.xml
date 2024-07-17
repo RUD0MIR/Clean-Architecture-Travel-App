@@ -5,4 +5,5 @@
     </string>
 
     <string name="price_with_placeholder">от %1$s ₽</string>
+    <string name="price_with_sign">%1$s ₽</string>
 </resources>

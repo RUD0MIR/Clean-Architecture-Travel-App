@@ -1,6 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:background="?attr/colorSurfaceContainerLow"
+    tools:theme="@style/Theme.AirlineTickets"
+    android:paddingTop="@dimen/big_pad">
+
+    <ImageView
+        android:id="@+id/iv_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_circle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_ticket_recommendation_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/medium_pad"
+        android:fontFamily="@font/spf_medium"
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="7pt"
+        app:layout_constraintStart_toEndOf="@+id/iv_circle"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Уральские авиалинии" />
+
+    <TextView
+        android:id="@+id/tv_ticket_recommendation_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:drawableEndCompat="@drawable/ic_arrow_right"
+        app:drawableTint="?attr/colorPrimaryVariant"
+        tools:text="2390 р"
+        android:textSize="7pt"
+        android:textColor="?attr/colorPrimaryVariant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_ticket_recommendation_time_range"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/medium_pad"
+        android:fontFamily="@font/spf_medium"
+        android:ellipsize="end"
+        android:maxLines="1"
+        tools:text="13:10 09:55 12:00 13:00 14:00 15:00 16:00 14:00 15:00"
+        android:textColor="?attr/colorOnSurface"
+        android:textSize="7pt"
+        app:layout_constraintStart_toEndOf="@+id/iv_circle"
+        app:layout_constraintTop_toBottomOf="@id/tv_ticket_recommendation_title"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_pad"
+        app:dividerColor="@color/gray5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ticket_recommendation_time_range" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

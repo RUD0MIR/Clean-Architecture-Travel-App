@@ -24,6 +24,10 @@
         <argument
             android:name="arrival"
             app:argType="string" />
+        <action
+            android:id="@+id/action_detailedSearchFragment_to_searchFragment"
+            app:destination="@id/searchFragment"
+            app:popUpTo="@id/mainFragment" />
     </fragment>
     <dialog
         android:id="@+id/searchFragment"
@@ -43,5 +47,10 @@
         android:id="@+id/backButtonFragment"
         android:name="com.rud.tickets_search_presentation.fragment.BackButtonFragment"
         android:label="fragment_back_button"
-        tools:layout="@layout/fragment_back_button" />
+        tools:layout="@layout/fragment_back_button" >
+        <action
+            android:id="@+id/action_backButtonFragment_to_searchFragment"
+            app:destination="@id/searchFragment"
+            app:popUpTo="@id/mainFragment" />
+    </fragment>
 </navigation>
