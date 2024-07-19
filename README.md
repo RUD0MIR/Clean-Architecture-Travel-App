@@ -6,12 +6,12 @@
 
 Тестовое задание от компании Effective Mobile, г. Москва
 
-## App Screenshots
+## Скриншоты:
 
 ![app screenshots](https://github.com/RUD0MIR/Clean-Architecture-Travel-App/blob/main/app_screenshots.png?raw=true)
 
 
-## Implemented technologies:
+## Реализованные технологии:
 - Kotlin
 - Kotlin Coroutines
 - LiveData & Flow
