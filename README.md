@@ -1,5 +1,7 @@
 ![app icon](https://github.com/RUD0MIR/Clean-Architecture-Travel-App/blob/main/app_icon.png?raw=true)
 
+
+
 # CA Travel App
 
 Тестовое задание от компании Effective Mobile, г. Москва
