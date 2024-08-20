@@ -30,7 +30,7 @@ import javax.inject.Singleton
 class DataModule {
     @Provides
     @Singleton
-    fun provideRetrofitInstance(): TicketsApi =
+    internal fun provideRetrofitInstance(): TicketsApi =
         Retrofit.Builder()
             .baseUrl(Constants.BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
@@ -39,15 +39,15 @@ class DataModule {
 
     @Provides
     @Singleton
-    fun provideTicketsOffersRepository(ticketsApi: TicketsApi): TicketsOffersRepository {
-        //TODO: use real implementation: return TicketsOffersRepositoryImpl(ticketsApi)
+    internal fun provideTicketsOffersRepository(ticketsApi: TicketsApi): TicketsOffersRepository {
+        // using fake version, because API doesn't work anymore
         return FAKETicketsOffersRepositoryImpl()
     }
 
     @Provides
     @Singleton
-    fun provideTicketsRecommendationsRepository(ticketsApi: TicketsApi): TicketsRecommendationsRepository {
-        //TODO: use real implementation: return TicketsRecommendationsRepositoryImpl(ticketsApi)
+    internal fun provideTicketsRecommendationsRepository(ticketsApi: TicketsApi): TicketsRecommendationsRepository {
+        // using fake version, because API doesn't work anymore
         return FAKETicketsRecommendationsRepositoryImpl()
     }
 

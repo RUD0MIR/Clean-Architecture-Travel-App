@@ -2,7 +2,7 @@ package com.rud.tickets_search_data.model
 
 import com.google.gson.annotations.SerializedName
 
-data class TicketDto(
+internal data class Ticket(
     val arrival: Arrival,
     val badge: String,
     val company: String,
